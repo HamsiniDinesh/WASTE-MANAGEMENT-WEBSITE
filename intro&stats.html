@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title> Solid waste management</title>
+  <style>
+  h1{
+    font-family: 	Brush Script MT;
+    font-size: 47px;
+    color: white;
+    position: relative;
+    top: 40px;
+    left: 15px;
+  }
+
+  body {
+  margin: 0;
+  font-family: Lucida Console;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #008080;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #20B2AA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #7FFFD4;
+  color: black;
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 6px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 19px;
+  text-decoration: none;
+  font-family: Courier New;
+}
+
+.nav li a:hover {
+  color: black;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #008080, #66CDAA);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+}
+
+h2{
+  font-family: Rockwell;
+  left: 10px;
+  position: relative;
+}
+
+p{
+  left: 10px;
+  position: relative;
+  font-family: Times new roman;
+  font-size: 23px;
+}
+</style>
+
+<script>
+function menuOnClick() {
+document.getElementById("menu-bar").classList.toggle("change");
+document.getElementById("nav").classList.toggle("change");
+document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+</script>
+
+</head>
+<body>
+  <div class="topnav">
+<h1>EcoSolutions</h1>
+<a href="management.html">Management</a>
+<a href="how&where.html">How & Where?</a>
+<a href="intro&stats.html">Introduction & statistics</a>
+</div>
+
+<div id="menu">
+<div id="menu-bar" onclick="menuOnClick()">
+<div id="bar1" class="bar"></div>
+<div id="bar2" class="bar"></div>
+<div id="bar3" class="bar"></div>
+</div>
+<nav class="nav" id="nav">
+<ul>
+<b><li><a href="home.html">Home</a></li></b>
+<b><li><a href="about.html">About Us</a></li></b>
+<b><li><a href="contact.html">Contacts</a></li></b>
+  <b><li><a href="miscellanous.html">Miscellanous</a></li></b>
+</ul>
+</nav>
+</div>
+
+<div class="menu-bg" id="menu-bg"></div>
+
+<center>
+<h2 style = "font-family: Times new roman; font-size: 30px"> What is waste management?</h2>
+<p>Waste management (or waste disposal) includes the processes and actions required to manage
+   waste from its inception to its final disposal.
+    This includes the collection, transport, treatment and disposal of waste, together with monitoring and regulation of the waste
+     management process and waste-related laws, technologies, economic mechanisms.</p>
+
+     <p>Waste can be solid, liquid, or gases and each type has different methods of disposal and management.
+       Waste management deals with all types of waste, including industrial, biological, household, municipal, organic, biomedical, radioactive wastes.
+       In some cases, waste can pose a threat to human health. Health issues are associated throughout the entire process of waste management.
+        Health issues can also arise indirectly or directly. Directly, through the handling of solid waste, and indirectly through the consumption of water, soil and food.
+        Waste is produced by human activity, for example, the extraction and processing of raw materials.
+        Waste management is intended to reduce adverse effects of waste on human health, the environment, planetary resources and aesthetics.</p><br/>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r-q5V6LDxEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+
+         <p>Proper management of waste is important for building sustainable and liveable cities,
+            but it remains a challenge for many developing countries and cities. A report found that effective waste management is relatively expensive, usually
+             comprising 20%–50% of municipal budgets. Operating this essential municipal service requires integrated systems that are efficient,
+             sustainable, and socially supported. A large portion of waste management practices deal with municipal solid waste (MSW) which is the bulk of the waste that is
+             created by household, industrial, and commercial activity.</p>
+
+             <p>According to the Intergovernmental Panel on Climate Change (IPCC), municipal solid waste is expected to reach approximately 3.4 Gt by 2050; however,
+               policies and lawmaking can reduce the amount of waste produced in different areas and cities of the world. Measures of waste management include measures for
+               integrated techno-economic mechanisms of a circular economy, effective disposal facilities, export and import control and optimal sustainable design of
+               products that are produced.</p>
+
+               <img src = "C:\Users\Elaine M Paily\Desktop\330px-Sophämtning_2010.jpg"/>
+               <figcaption> A specialized trash collection truck providing regular<br/> municipal trash collection<br/> in a neighborhood in Stockholm, Sweden</figcaption><br/>
+
+<h2 style = "font-family: Times new roman; font-size: 30px"> Principles of waste management</h2>
+<u><h3 style = "font-family: Times new roman; font-size: 25px">Waste hierarchy</h3></u>
+               <p>The waste hierarchy refers to the "3 Rs" Reduce, Reuse and Recycle, which classifies waste management strategies according to their desirability in terms of waste minimisation.
+                 The waste hierarchy is the bedrock of most waste minimization strategies. The aim of the waste hierarchy is to extract the maximum practical benefits from products and to generate
+                 the minimum amount of end waste; see: resource recovery. The waste hierarchy is represented as a pyramid because the basic premise is that policies should promote measures to prevent the generation of waste.
+                 The next step or preferred action is to seek alternative uses for the waste that has been generated i.e. by re-use. </p>
+
+                 <p>The next is recycling which includes composting. Following this step is material recovery and waste-to-energy. The final action is disposal, in landfills or through incineration
+                   without energy recovery. This last step is the final resort for waste which has not been prevented, diverted or recovered. The waste hierarchy represents the progression of a product or material
+                    through the sequential stages of the pyramid of waste management. The hierarchy represents the latter parts of the life-cycle for each product.</p>
+
+ <img src = "C:\Users\Elaine M Paily\Desktop\330px-Agbogbloshie_Ghana.jpg"/>
+ <figcaption>Waste pickers burning e-waste in Agbogbloshie,<br/> a site near Accra in Ghana that processes large volumes<br/> of international electronic waste.</figcaption><br/>
+
+<u><h3 style = "font-family: Times new roman; font-size: 25px">Life-cycle of a product</h3></u>
+ <p>The life-cycle begins with the design, then proceeds through manufacture, distribution, and primary use and then follows through the waste hierarchy's stages of reduce, reuse and recycle.
+   Each stage in the life-cycle offers opportunities for policy intervention, to rethink the need for the product, to redesign to minimize waste potential, to extend its use. Product life-cycle analysis is a way to optimize
+    the use of the world's limited resources by avoiding the unnecessary generation of waste.</p><br/>
+
+    <img src = "C:\Users\Elaine M Paily\Desktop\435px-Waste_hierarchy_rect-en.svg.png"/>
+    <figcaption>Diagram of the waste hierarchy</figcaption><br/>
+
+<h2 style = "font-family: Times new roman; font-size: 30px"> Waste handling and transport</h2>
+    <p>Waste collection methods vary widely among different countries and regions. Domestic waste collection services are often provided by local government authorities, or by private companies for industrial and commercial waste.
+       Some areas, especially those in less developed countries, do not have formal waste-collection systems.<p/>
+
+<u><h3 style = "font-family: Times new roman; font-size: 25px">Waste handling practices</h3></u>
+       <p>Curbside collection is the most common method of disposal in most European countries, Canada, New Zealand, United States, and many other parts of the developed world in which waste is collected at regular intervals by specialised trucks.
+          This is often associated with curb-side waste segregation. In rural areas, waste may need to be taken to a transfer station. Waste collected is then transported to an appropriate disposal facility. In some areas, vacuum collection is used in
+          which waste is transported from the home or commercial premises by vacuum along small bore tubes. Systems are in use in Europe and North America.</p>
+
+          <p>In some jurisdictions unsegregated waste is collected at the curb-side or from waste transfer stations and then sorted into recyclables and unusable waste. Such systems are capable of sorting large volumes of solid waste, salvaging recyclables,
+            and turning the rest into bio-gas and soil conditioner. In San Francisco, the local government established its Mandatory Recycling and Composting Ordinance in support of its goal of "Zero waste by 2020", requiring everyone in the city to keep recyclables and
+             compostables out of the landfill.</p>
+
+             <img src = "C:\Users\Elaine M Paily\Desktop\Bin.JPG"/>
+             <figcaption>Moulded plastic, wheeled waste bin in Berkshire, England</figcaption><br/>
+
+             <p>The three streams are collected with the curbside "Fantastic 3" bin system – blue for recyclables, green for compostables, and black for landfill-bound materials – provided to residents and businesses and serviced by San Francisco's sole refuse hauler, Recology.
+               The city's "Pay-As-You-Throw" system charges customers by the volume of landfill-bound materials, which provides a financial incentive to separate recyclables and compostables from other discards. The city's Department of the Environment's Zero Waste Program has led
+               the city to achieve 80% diversion, the highest diversion rate in North America. </p>
+
+               <p>Other businesses such as Waste Industries use a variety of colors to distinguish between trash and recycling cans. In addition, in some areas of the world the disposal of municipal
+                solid waste can cause environmental strain due to official not having benchmarks that help measure the environmental sustainability of certain practices.</p>
+
+                <u><h3 style = "font-family: Times new roman; font-size: 25px">Waste segregation</h3></u>
+                <p>This is the separation of wet waste and dry waste. The purpose is to recycle dry waste easily and to use wet waste as compost. When segregating waste, the amount of waste that gets landfilled reduces considerably, resulting in lower levels of air and water pollution.
+                  Importantly, waste segregation should be based on the type of waste and the most appropriate treatment and disposal. This also makes it easier to apply different processes to the waste, like composting, recycling and incineration. It is important to practice waste management
+                  and segregation as a community. One way to practice waste management is to ensure there is awareness. The process of waste segregation should be explained to the community.</p><br/>
+
+                  <img src = "C:\Users\Elaine M Paily\Desktop\Recycling_point_Gdansk_University_of_Technology.jpg"/>
+                  <figcaption>Recycling point at the Gdańsk University of Technology</figcaption><br/>
+
+                  <h2 style = "font-family: Times new roman; font-size: 30px"> Financial models</h2>
+                  <p>In most developed countries, domestic waste disposal is funded from a national or local tax which may be related to income, or property values. Commercial and industrial waste disposal is typically charged for as a commercial service, often as an integrated charge which includes disposal costs.
+                     This practice may encourage disposal contractors to opt for the cheapest disposal option such as landfill rather than the environmentally best solution such as re-use and recycling.</p>
+
+                     <p>Financing of solid waste management projects can be overwhelming for the city government, especially if the government see it as an important service they should render to the citizen. Donors and grants are a funding mechanism that is dependent on the interest of the donor organization.
+                       as much as it is a good way to develop a city's waste management infrastructure, attracting and utilizing grants is solely reliant on what the donor considers as important. Therefore, it may be a challenge for a city government to dictate how the funds should be distributed among the various aspect of waste management.</p>
+
+                       <p>In some areas like Taipei, the city government charges its households and industries for the volume of rubbish they produce. Waste is collected by the city council only if it is put in government issued rubbish bags. This policy has successfully reduced the amount of waste the city produces and increased the recycling rate.</p>
+
+                       <p>The World Bank finances and advises on solid waste management projects using a diverse suite of products and services, including traditional loans, results-based financing, development policy financing, and technical advisory. World Bank-financed waste management projects usually address the entire lifecycle of waste right from
+                         the point of generation to collection and transportation, and finally treatment and disposal.</p>
+
+                         <h2 style = "font-family: Times new roman; font-size: 30px"> Disposal methods</h2>
+                           <u><h3 style = "font-family: Times new roman; font-size: 25px">Landfill</h3></u>
+                         <p>A landfill site, also known as a tip, dump, rubbish dump, garbage dump, or dumping ground, is a site for the disposal of waste materials. Landfill is the oldest and most common form of waste disposal, although the systematic burial of the waste with daily, intermediate and final covers only began in the 1940s. In the past,
+                           refuse was simply left in piles or thrown into pits; in archeology this is known as a midden.</p>
+
+                           <img src = "C:\Users\Elaine M Paily\Desktop\375px-Wysypisko.jpg"/>
+                           <figcaption>A landfill in Poland</figcaption><br/><br/>
+
+                           <img src = "C:\Users\Elaine M Paily\Desktop\330px-Landfill_compactor.jpg"/>
+                           <figcaption>A landfill compaction vehicle in action.</figcaption><br/>
+
+                           <p>Some landfill sites are used for waste management purposes, such as temporary storage, consolidation and transfer, or for various stages of processing waste material, such as sorting, treatment, or recycling. Unless they are stabilized, landfills may undergo severe shaking or soil liquefaction of the ground during an earthquake.
+                             Once full, the area over a landfill site may be reclaimed for other uses.</p>
+
+                              <u><h3 style = "font-family: Times new roman; font-size: 25px">Incineration</h3></u>
+                              <p>Incineration is a disposal method in which solid organic wastes are subjected to combustion so as to convert them into residue and gaseous products. This method is useful for disposal of both municipal solid waste and solid residue from waste water treatment.
+                                This process reduces the volumes of solid waste by 80 to 95 percent.
+                                 Incineration and other high temperature waste treatment systems are sometimes described as "thermal treatment". Incinerators convert waste materials into heat, gas, steam, and ash.</p>
+
+                                 <p>Incineration is carried out both on a small scale by individuals and on a large scale by industry. It is used to dispose of solid, liquid and gaseous waste. It is recognized as a practical method of disposing of certain hazardous waste
+                                    materials (such as biological medical waste). Incineration is a controversial method of waste disposal,
+                                    due to issues such as emission of gaseous pollutants including substantial quantities of carbon dioxide.</p>
+
+                                     <h2 style = "font-family: Times new roman; font-size: 30px"> Statistics</h2>
+
+                                     <img src = "C:\Users\Elaine M Paily\Desktop\2020-08-15.png"/><br/>
+
+                                     <p> About 43 million tonnes (70%) are collected, of which about 12 million tonnes are treated, and 31 million tonnes are dumped in landfill sites.
+
+With changing consumption patterns and rapid economic growth, it is estimated that urban municipal solid waste generation will increase to 165 million tonnes in 2030.</p><br/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LZ2giAaHNYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+ gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+
+ <p>As per the central pollution control board (CPCB) of India, the per capita waste generation has increased at an exponential rate (0.26 kg/day to 0.85 kg/day) (CPCB India, 2018a). Its is estimated that approximately 80% to 90% of the municipal waste is disposed-off in landfills
+    without proper management practices and open burning, leading to air, water, soil pollution. </p>
+
+    <p>As per the report published in UNPD, the world produces around 300 million tonnes of plastic waste, only 9% of the generated plastic waste is recycled, ~14% collected for recycling while the rest reaches the ocean annually</p>
+</center>
+
+</body>
+</html>
