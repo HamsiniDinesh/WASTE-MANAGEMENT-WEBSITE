@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title> Solid waste management</title>
+  <style>
+  h1{
+    font-family: 	Brush Script MT;
+    font-size: 47px;
+    color: white;
+    position: relative;
+    top: 40px;
+    left: 15px;
+  }
+
+  body {
+  margin: 0;
+  font-family: Lucida Console;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #008080;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #20B2AA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #7FFFD4;
+  color: black;
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 6px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 19px;
+  text-decoration: none;
+  font-family: Courier New;
+}
+
+.nav li a:hover {
+  color: black;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #008080, #66CDAA);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+}
+
+h2{
+  font-family: Rockwell;
+  left: 10px;
+  position: relative;
+  font-size: 27px;
+}
+
+p{
+  left: 10px;
+  position: relative;
+  font-family: Lucida Console;
+  font-size: 20px;
+}
+</style>
+
+<script>
+function menuOnClick() {
+document.getElementById("menu-bar").classList.toggle("change");
+document.getElementById("nav").classList.toggle("change");
+document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+</script>
+
+</head>
+<body>
+  <div class="topnav">
+<h1>EcoSolutions</h1>
+<a href="management.html">Management</a>
+<a href="how&where.html">How & Where?</a>
+<a href="intro&stats.html">Introduction & statistics</a>
+</div>
+
+<div id="menu">
+<div id="menu-bar" onclick="menuOnClick()">
+<div id="bar1" class="bar"></div>
+<div id="bar2" class="bar"></div>
+<div id="bar3" class="bar"></div>
+</div>
+<nav class="nav" id="nav">
+<ul>
+<b><li><a href="home.html">Home</a></li></b>
+<b><li><a href="about.html">About Us</a></li></b>
+<b><li><a href="contact.html">Contacts</a></li></b>
+  <b><li><a href="miscellanous.html">Miscellanous</a></li></b>
+</ul>
+</nav>
+</div>
+
+<div class="menu-bg" id="menu-bg"></div>
+
+<center>
+  <h2>References</h2>
+<p>https://en.wikipedia.org/wiki/Waste_management<br/><br/>https://www.britannica.com/technology/solid-waste-management<br/><br/>
+https://www.unep.org/explore-topics/resource-efficiency/what-we-do/cities/solid-waste-management<br/><br/>
+https://www.edx.org/course/solid-waste-management<br/><br/>https://www.orfonline.org/research/solid-waste-management-in-urban-india-imperatives-for-improvement-77129/<br/><br/>https://www.greaternoidaauthority.in/swmhead<br/><br/>
+https://www.saskatchewan.ca/residents/environment-public-health-and-safety/saskatchewan-waste-management/solid-waste-management-strategy
+<br/><br/>https://www.who.int/publications-detail-redirect/WHO-HEP-ECH-AQH-2021.8</p>
+</center><br/>
+
+<h2>FAQs</h2>
+<p><b>1. What is waste management?</b></p>
+<p>Waste management is the collection, transportation and disposal of waste materials.</p><br/>
+<p><b>2. What are the rules and regulations guiding waste management in India</b></p>
+<p>Municipal Solid Waste (Management and Handling) Rules 2000 regulate the management and handling of the municipal solid wastes and are applicable to every municipal authority responsible for collection, segregation, storage, transportation, processing and disposal of municipal solid wastes</p>
+
+<p>Bio-Medical Waste (Management and Handling) Rules, 1998 regulate the management and handling of bio-medical waste and are applicable to all persons who generate, collect, receive, store, transport, treat, dispose, or handle bio medical waste in any form.</p>
+
+<p>E-Waste (Management and Handling) Rules, 2010 regulate the management and handling of electrical and electronic waste and is applicable to every producer, consumer involved in manufacture, sale, purchase and processing of these equipments or its components.
+
+</p><br/>
+
+<p><b>3. What are the common methods of waste disposal?</b></p>
+<p>The commonly practiced technologies for SWM can be grouped under three major categories, i.e., bio-processing, thermal processing and sanitary landfill. The bio-processing method includes aerobic and anaerobic composting. Thermal methods are incineration and pyrolysis. Sanitary landfill is generally used to dispose off the final rejects coming out of the biological and thermal waste processing units.</p><br/>
+
+<p><b>4. How do I practice waste management at home?</b></p>
+<p><ul><li>Keep separate containers for dry and wet waste in the kitchen.</li>
+<li>Keep two bags for dry waste collection- paper and plastic, for the rest of the household waste.</li>
+<li>Keep plastic from the kitchen clean and dry and drop into the dry waste bin. Keep glass /plastic containers rinsed of food matter.</li>
+<li>Keep a paper bag for throwing sanitary waste.</li></ul></p><br/>
+</body>
+</html>
