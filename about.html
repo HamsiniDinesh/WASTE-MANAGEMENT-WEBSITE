@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title> Solid waste management</title>
+
+  <style>
+    h1{
+      font-family: 	Brush Script MT;
+      font-size: 47px;
+      color: white;
+      position: relative;
+      top: 40px;
+      left: 15px;
+    }
+
+    body {
+    margin: 0;
+    font-family: Lucida Console;
+  }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #008080;
+    }
+
+    .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 15px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .topnav a:hover {
+      background-color: #20B2AA;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #7FFFD4;
+      color: black;
+    }
+
+    #menu {
+      z-index: 2;
+    }
+
+    #menu-bar {
+      width: 45px;
+      height: 40px;
+      margin: 30px 0 20px 20px;
+      cursor: pointer;
+    }
+
+    .bar {
+      height: 6px;
+      width: 100%;
+      background-color: white;
+      display: block;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+
+    #bar1 {
+      transform: translateY(-4px);
+    }
+
+    #bar3 {
+      transform: translateY(4px);
+    }
+
+    .nav {
+      transition: 0.3s ease;
+      display: none;
+    }
+
+    .nav ul {
+      padding: 0 22px;
+    }
+
+    .nav li {
+      list-style: none;
+      padding: 12px 0;
+    }
+
+    .nav li a {
+      color: white;
+      font-size: 19px;
+      text-decoration: none;
+      font-family: Courier New;
+    }
+
+    .nav li a:hover {
+      color: black;
+    }
+
+    .menu-bg, #menu {
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+
+    .menu-bg {
+      z-index: 1;
+      width: 0;
+      height: 0;
+      margin: 30px 0 20px 20px;
+      background: radial-gradient(circle, #008080, #66CDAA);
+      border-radius: 50%;
+      transition: 0.3s ease;
+    }
+
+    .change {
+      display: block;
+    }
+
+    .change .bar {
+      background-color: white;
+    }
+
+    .change #bar1 {
+      transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+      opacity: 0;
+    }
+
+    .change #bar3 {
+      transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .change-bg {
+      width: 520px;
+      height: 460px;
+      transform: translate(-60%,-30%);
+    }
+
+    .rectangle {
+  height: 590px;
+  width: 1145px;
+  background-color: #555;
+  position: relative;
+  left: 50px;
+  top: 25px;
+  color: white;
+  font-size: 40px;
+  font-family: Courier New;
+}
+
+h2{
+  top: 50px;
+  left: 70px;
+  position: relative;
+}
+
+p{
+  font-size: 20px;
+  top: 50px;
+  left: 70px;
+  position: relative;
+}
+
+.button {
+  border-radius: 15px;
+  background-color: #4682B4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  width: 135px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  height: 75px;
+  font-family: 	Brush Script MT;
+  top: 10px;
+  left: 70px;
+  position: relative;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#two{
+  left: 1000px;
+  top: 30px;
+  position: relative;
+}
+    </style>
+
+    <script>
+    function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+    </script>
+
+    </head>
+
+    <body>
+      <div class="topnav">
+<h1>EcoSolutions</h1>
+<a href="management.html">Management</a>
+<a href="how&where.html">How & Where?</a>
+<a href="intro&stats.html">Introduction & statistics</a>
+</div>
+
+<div id="menu">
+<div id="menu-bar" onclick="menuOnClick()">
+  <div id="bar1" class="bar"></div>
+  <div id="bar2" class="bar"></div>
+  <div id="bar3" class="bar"></div>
+</div>
+<nav class="nav" id="nav">
+  <ul>
+  <b><li><a href="home.html">Home</a></li></b>
+  <b><li><a href="about.html">About Us</a></li></b>
+    <b><li><a href="contact.html">Contacts</a></li></b>
+      <b><li><a href="miscellanous.html">Miscellanous</a></li></b>
+  </ul>
+</nav>
+</div>
+
+<div class="menu-bg" id="menu-bg"></div>
+
+      <div class="rectangle">
+       <h2> About Us</h2>
+  <i>  <p>Hey There! <br/>This is a website dedicated to shed light<br/> on the condition of waste management of our country.<br/>
+  We will discuss how and where wastes are generated<br/> and how  they are handled<br/> by the waste management system of india.<br/>
+We will also look at some <br/> daily, monthly and yearly statistics of waste generation <br/> and the communitites<br/> which are adversly
+affected by this.<br/> Have any Questions?<br/> Feel free to contact us<br/> and post your questions in the QnA section. </p></i>
+<br/>
+<form action="contact.html">
+  <button class="button" type="submit"><span>Contact Us </span></button>
+    </form>
+      </div>
+    </body>
+
+    </html>
