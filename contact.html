@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title> Solid waste management</title>
+
+  <style>
+    h1{
+      font-family: 	Brush Script MT;
+      font-size: 47px;
+      color: white;
+      position: relative;
+      top: 40px;
+      left: 15px;
+    }
+
+    body {
+    margin: 0;
+    font-family: Lucida Console;
+  }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #008080;
+    }
+
+    .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 15px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .topnav a:hover {
+      background-color: #20B2AA;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #7FFFD4;
+      color: black;
+    }
+
+    #menu {
+      z-index: 2;
+    }
+
+    #menu-bar {
+      width: 45px;
+      height: 40px;
+      margin: 30px 0 20px 20px;
+      cursor: pointer;
+    }
+
+    .bar {
+      height: 6px;
+      width: 100%;
+      background-color: white;
+      display: block;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+
+    #bar1 {
+      transform: translateY(-4px);
+    }
+
+    #bar3 {
+      transform: translateY(4px);
+    }
+
+    .nav {
+      transition: 0.3s ease;
+      display: none;
+    }
+
+    .nav ul {
+      padding: 0 22px;
+    }
+
+    .nav li {
+      list-style: none;
+      padding: 12px 0;
+    }
+
+    .nav li a {
+      color: white;
+      font-size: 19px;
+      text-decoration: none;
+      font-family: Courier New;
+    }
+
+    .nav li a:hover {
+      color: black;
+    }
+
+    .menu-bg, #menu {
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+
+    .menu-bg {
+      z-index: 1;
+      width: 0;
+      height: 0;
+      margin: 30px 0 20px 20px;
+      background: radial-gradient(circle, #008080, #66CDAA);
+      border-radius: 50%;
+      transition: 0.3s ease;
+    }
+
+    .change {
+      display: block;
+    }
+
+    .change .bar {
+      background-color: white;
+    }
+
+    .change #bar1 {
+      transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+      opacity: 0;
+    }
+
+    .change #bar3 {
+      transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .change-bg {
+      width: 520px;
+      height: 460px;
+      transform: translate(-60%,-30%);
+    }
+
+h2{
+  font-family: Lucida Handwriting;
+}
+
+.rectangle {
+height: 590px;
+width: 1000px;
+background-color: #C0C0C0;
+position: relative;
+left: 25px;
+top: 25px;
+color: black;
+font-size: 20px;
+font-family: Courier New;
+}
+
+#three{
+  font-family: Courier New;
+  color: white;
+  font-size: 30px;
+}
+
+.rectangle1 {
+height: 400px;
+width: 600px;
+background-color: black;
+position: relative;
+left: 0;
+top: 50px;
+color: black;
+font-size: 20px;
+font-family: Courier New;
+}
+
+p{
+  font-family: Courier New;
+  color: white;
+  font-size: 20px;
+}
+  </style>
+
+  <script>
+  function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+  }
+  </script>
+
+  </head>
+
+  <body>
+    <div class="topnav">
+<h1>EcoSolutions</h1>
+<a href="management.html">Management</a>
+<a href="how&where.html">How & Where?</a>
+<a href="intro&stats.html">Introduction & statistics</a>
+</div>
+
+<div id="menu">
+<div id="menu-bar" onclick="menuOnClick()">
+<div id="bar1" class="bar"></div>
+<div id="bar2" class="bar"></div>
+<div id="bar3" class="bar"></div>
+</div>
+<nav class="nav" id="nav">
+<ul>
+<b><li><a href="home.html">Home</a></li></b>
+<b><li><a href="about.html">About Us</a></li></b>
+  <b><li><a href="contact.html">Contacts</a></li></b>
+    <b><li><a href="miscellanous.html">Miscellanous</a></li></b>
+</ul>
+</nav>
+</div>
+
+<div class="menu-bg" id="menu-bg"></div>
+
+<center>
+<div class="rectangle">
+  <br/>
+<h2> We'd love to hear from you!</h2>
+<div class = "rectangle1">
+  <br/>
+<b><p id = "three">Contact us</p></b>
+<p>Email: elainejpai@gmail.com, hamsinidinesh@gmail.com<br/><br/> Phone: 9483049206, 9964633507<br/><br/>
+LinkedIn: https://www.linkedin.com/in/elaine-m-paily-1411j<br/>&emsp;https://www.linkedin.com/in/hamsini-d-16b61a221</p>
+</div>
+</div>
+</center>
+
+  </body>
+
+  </html>
